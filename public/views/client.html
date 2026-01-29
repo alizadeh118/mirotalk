@@ -1,75 +1,69 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- Title and Icon -->
+        
 
         <title id="clientTitle">MiroTalk WebRTC Video call, Chat Room & Screen Sharing.</title>
-        <link id="icon" rel="shortcut icon" href="../images/logo.svg" />
-        <link id="appleTouchIcon" rel="apple-touch-icon" href="../images/logo.svg" />
+        <link id="icon" rel="shortcut icon" href="../images/logo.svg" >
+        <link id="appleTouchIcon" rel="apple-touch-icon" href="../images/logo.svg" >
 
-        <!-- Meta Information -->
+        
 
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-            name="viewport"
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+        <meta             name="viewport"
             content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-        />
-        <meta
-            name="description"
+        >
+        <meta             name="description"
             content="MiroTalk powered by WebRTC, Real-time Simple Secure Fast video calls, chat and screen sharing capabilities in the browser, from your mobile or desktop."
-        />
-        <meta
-            name="keywords"
+        >
+        <meta             name="keywords"
             content="webrtc, openAI, chatGPT, webrtc stun, webrtc turn, video meeting, video chat, multi video chat, peer to peer, p2p, zoom"
-        />
+        >
 
-        <!-- https://ogp.me -->
+        
 
-        <meta property="og:type" content="{{OG_TYPE}}" />
-        <meta property="og:site_name" content="{{OG_SITE_NAME}}" />
-        <meta property="og:title" content="{{OG_TITLE}}" />
-        <meta property="og:description" content="{{OG_DESCRIPTION}}" />
-        <meta property="og:image" content="{{OG_IMAGE}}" />
-        <meta property="og:url" content="{{OG_URL}}" />
+        <meta property="og:type" content="{{OG_TYPE}}" >
+        <meta property="og:site_name" content="{{OG_SITE_NAME}}" >
+        <meta property="og:title" content="{{OG_TITLE}}" >
+        <meta property="og:description" content="{{OG_DESCRIPTION}}" >
+        <meta property="og:image" content="{{OG_IMAGE}}" >
+        <meta property="og:url" content="{{OG_URL}}" >
 
-        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png" >
 
-        <!-- StyleSheet -->
+        
 
-        <link rel="stylesheet" href="../css/client.css" />
-        <link rel="stylesheet" href="../css/videoGrid.css" />
-        <link rel="stylesheet" href="../css/whiteboard.css" />
+        <link rel="stylesheet" href="../css/client.css" >
+        <link rel="stylesheet" href="../css/videoGrid.css" >
+        <link rel="stylesheet" href="../css/whiteboard.css" >
 
-        <!-- https://cdnjs.com/libraries/font-awesome -->
+        
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="stylesheet" href="/vendor/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-        <!-- https://animate.style 4 using for swal fadeIn-Out -->
+        
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="/vendor/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-        <!-- flatpickr  https://flatpickr.js.org/themes/ -->
+        
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-        <link rel="stylesheet" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css" />
+        <link rel="stylesheet" href="/vendor/npm/flatpickr/dist/flatpickr.min.css">
+        <link rel="stylesheet" href="/vendor/flatpickr/dist/themes/airbnb.css">
 
-        <!--  pickr  https://github.com/simonwep/pickr -->
+        
 
-        <!-- 'classic' theme -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" />
-        <!-- 'monolith' theme -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css" />
-        <!-- 'nano' theme -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+        
+        <link rel="stylesheet" href="/vendor/npm/@simonwep/pickr/dist/themes/classic.min.css">
+        
+        <link rel="stylesheet" href="/vendor/npm/@simonwep/pickr/dist/themes/monolith.min.css">
+        
+        <link rel="stylesheet" href="/vendor/npm/@simonwep/pickr/dist/themes/nano.min.css">
 
-        <!-- Highlight  https://github.com/highlightjs/highlight.js -->
+        
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css"
-        />
+        <link rel="stylesheet" href="/vendor/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
 
-        <!-- JavaScripts -->
+        
 
         <script async src="../js/stats.js"></script>
     </head>
@@ -77,37 +71,36 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
 
-        <!-- just 4SEO Optimization -->
+        
 
         <div id="webRTCSeo">
             <h1>WebRTC</h1>
         </div>
 
-        <!-- show this before to join -->
+        
 
         <div id="loadingDiv" class="center pulsate">
             <h1>Loading</h1>
-            <img class="loading-img" src="../images/loading.gif" />
+            <img class="loading-img" src="../images/loading.gif" >
             <pre>
 Please allow the camera or microphone
 access to use this app.
             </pre>
         </div>
 
-        <!-- Scan to Join -->
+        
 
         <div id="qrRoomPopupContainer" class="top-center fadein">
             <canvas id="qrRoomPopup"></canvas>
             <div id="qrText">Scan to join the room</div>
         </div>
 
-        <!-- init user devices -->
+        
 
         <div id="initUser" class="init-user hidden">
-            <!-- <p>Please allow the camera & microphone access to use this app.</p> -->
+            
             <div id="initVideoContainer" class="init-video-container">
-                <video
-                    id="initVideo"
+                <video                     id="initVideo"
                     playsinline="true"
                     autoplay=""
                     class="mirror"
@@ -127,17 +120,16 @@ access to use this app.
             </div>
         </div>
 
-        <!-- Add emoji to username -->
+        
 
         <div id="usernameEmoji" class="usernameEmoji fadein center hidden"></div>
 
-        <!-- Start bottom buttons -->
+        
         <div id="bottomButtons" class="fadein">
             <div id="audioSplit" class="split-btn">
                 <button id="audioBtn" class="fas fa-microphone"></button>
                 <div id="audioDropdown" class="dropdown dropup hidden">
-                    <button
-                        id="audioToggle"
+                    <button                         id="audioToggle"
                         class="dropdown-toggle device-dropdown-toggle"
                         type="button"
                         data-bs-toggle="dropdown"
@@ -152,8 +144,7 @@ access to use this app.
             <div id="videoSplit" class="split-btn">
                 <button id="videoBtn" class="fas fa-video"></button>
                 <div id="videoDropdown" class="dropdown dropup hidden">
-                    <button
-                        id="videoToggle"
+                    <button                         id="videoToggle"
                         class="dropdown-toggle device-dropdown-toggle"
                         type="button"
                         data-bs-toggle="dropdown"
@@ -177,8 +168,7 @@ access to use this app.
             <div id="settingsSplit" class="split-btn">
                 <button id="mySettingsBtn" class="fas fa-cogs"></button>
                 <div id="settingsExtraDropdown" class="dropdown dropup">
-                    <button
-                        id="settingsExtraToggle"
+                    <button                         id="settingsExtraToggle"
                         class="dropdown-toggle device-dropdown-toggle"
                         type="button"
                         data-bs-toggle="dropdown"
@@ -187,12 +177,11 @@ access to use this app.
                     >
                         <i class="fas fa-chevron-up"></i>
                     </button>
-                    <div
-                        id="settingsExtraMenu"
+                    <div                         id="settingsExtraMenu"
                         class="dropdown-menu text-start hidden"
                         aria-labelledby="settingsExtraToggle"
                     >
-                        <!-- https://fontawesome.com/icons?d=gallery -->
+                        
                         <button id="shareRoomBtn"><i class="fas fa-share-alt"></i> Share Room</button>
                         <button id="hideMeBtn"><i class="fas fa-user"></i> Hide Me</button>
                         <button id="recordStreamBtn"><i class="fas fa-record-vinyl"></i> Recording</button>
@@ -211,19 +200,16 @@ access to use this app.
             <button id="leaveRoomBtn" class="fa-solid fa-phone-slash"></button>
         </div>
 
-        <!-- End bottom buttons -->
+        
 
-        <!-- Start room emoji picker -->
+        
 
         <div id="emojiPickerContainer" class="roomEmoji fadein"></div>
         <div id="userEmoji" class="userEmoji"></div>
 
-        <!-- End room emoji picker -->
+        
 
-        <!-- Start chat room 
-        https://codepen.io/sajadhsm/pen/odaBdd
-        https://getemoji.com
-        -->
+        
 
         <section id="msgerDraggable" class="msger-draggable fadein">
             <section id="msger" class="msger">
@@ -235,8 +221,7 @@ access to use this app.
                         <button id="msgerMaxBtn" class="fas fa-expand"></button>
                         <button id="msgerMinBtn" class="fas fa-compress"></button>
                         <div class="dropdown-custom">
-                            <button
-                                class="dropdown-toggle-custom"
+                            <button                                 class="dropdown-toggle-custom"
                                 type="button"
                                 id="msgerDropDownMenuBtn"
                                 data-bs-toggle="dropdown-custom"
@@ -244,28 +229,27 @@ access to use this app.
                             >
                                 <i class="fas fa-ellipsis-v"></i>
                             </button>
-                            <ul
-                                id="msgerDropDownContent"
+                            <ul                                 id="msgerDropDownContent"
                                 class="dropdown-menu-custom"
                                 aria-labelledby="msgerDropDownMenuBtn"
                             >
                                 <li>
-                                    <hr />
+                                    <hr>
                                     <div id="msgerShowChatOnMsgDiv" class="title ml-10">
                                         <i class="fa-solid fa-eye"></i>
                                         <label class="switch ml-10">
-                                            <input id="msgerShowChatOnMsg" type="checkbox" checked />
+                                            <input id="msgerShowChatOnMsg" type="checkbox" checked >
                                             <span class="slider round"></span>
                                         </label>
                                     </div>
                                     <div id="msgerSpeechMsgDiv" class="title">
                                         <i class="fas fa-volume-high ml-10"></i>
                                         <label class="switch ml-10">
-                                            <input id="msgerSpeechMsg" type="checkbox" />
+                                            <input id="msgerSpeechMsg" type="checkbox" >
                                             <span class="slider round"></span>
                                         </label>
                                     </div>
-                                    <hr />
+                                    <hr>
                                 </li>
                                 <li>
                                     <button id="msgerSaveBtn"><i class="fas fa-save"></i> Save messages</button>
@@ -280,26 +264,25 @@ access to use this app.
                 </header>
 
                 <main id="msgerChat" class="msger-chat">
-                    <!-- EMPTY CHAT ILLUSTRATION -->
+                    
                     <div id="msgerEmptyNotice" class="empty-chat-notice">
-                        <img alt="Empty chat illustration" class="empty-chat-img" src="../svg/emptyChat.svg" />
+                        <img alt="Empty chat illustration" class="empty-chat-img" src="../svg/emptyChat.svg" >
                         <h5 class="empty-chat-title">Start Conversation</h5>
                         <p class="empty-chat-desc">
                             There are no messages here yet. Start a conversation by sending a message.
                         </p>
                     </div>
-                    <!-- Chat messages will be appended here -->
+                    
                 </main>
 
-                <!-- Start emoji picker -->
+                
 
                 <section id="msgerEmojiPicker" class="hidden fadein chatEmojiPicker"></section>
 
-                <!-- End emoji picker -->
+                
 
                 <div class="msger-inputarea">
-                    <textarea
-                        rows="1"
+                    <textarea                         rows="1"
                         cols="1"
                         id="msgerInput"
                         class="msger-input"
@@ -320,17 +303,16 @@ access to use this app.
                 </div>
             </section>
 
-            <!-- Start private msg -->
+            
 
             <section id="msgerCP" class="center fadein">
                 <section id="msgerCPSec" class="msger">
                     <header id="msgerCPHeader" class="msger-private-header">
                         <div class="msger-header-title"><i class="fas fa-users"></i> Participants</div>
                         <div class="msger-header-options">
-                            <!-- More options -->
+                            
                             <div id="tabRoomParticipants" class="dropdown-custom">
-                                <button
-                                    class="dropdown-toggle-custom"
+                                <button                                     class="dropdown-toggle-custom"
                                     type="button"
                                     id="msgerCPDropDownMenuBtn"
                                     data-bs-toggle="dropdown-custom"
@@ -338,8 +320,7 @@ access to use this app.
                                 >
                                     <i class="fas fa-ellipsis-v"></i>
                                 </button>
-                                <ul
-                                    id="msgerCPDropDownContent"
+                                <ul                                     id="msgerCPDropDownContent"
                                     class="dropdown-menu-custom"
                                     aria-labelledby="msgerCPDropDownMenuBtn"
                                 >
@@ -373,22 +354,20 @@ access to use this app.
                     </header>
                     <main id="msgerCPChat" class="msger-chat">
                         <div class="search-container">
-                            <input
-                                id="searchPeerBarName"
+                            <input                                 id="searchPeerBarName"
                                 type="text"
                                 placeholder=" 🔍 Search peer by name..."
                                 maxlength="254"
                                 name="search"
-                            />
+                            >
                         </div>
-                        <br />
-                        <!-- EMPTY PARTICIPANTS ILLUSTRATION -->
+                        <br>
+                        
                         <div id="msgerEmptyParticipantsNotice" class="empty-participants-notice">
-                            <img
-                                alt="Empty participants illustration"
+                            <img                                 alt="Empty participants illustration"
                                 class="empty-participants-img"
                                 src="../svg/emptyParticipants.svg"
-                            />
+                            >
                             <h5 class="empty-participants-title">Participants</h5>
                             <p class="empty-participants-desc">There are no participants here yet.</p>
                         </div>
@@ -397,12 +376,12 @@ access to use this app.
                 </section>
             </section>
 
-            <!-- End private msg -->
+            
         </section>
 
-        <!-- End chat room -->
+        
 
-        <!-- Start of caption section -->
+        
 
         <section id="captionDraggable" class="caption-draggable fadein">
             <section id="caption" class="caption">
@@ -422,9 +401,9 @@ access to use this app.
                 </header>
 
                 <main id="captionChat" class="caption-chat">
-                    <!-- EMPTY CAPTION ILLUSTRATION -->
+                    
                     <div id="captionEmptyNotice" class="empty-caption-notice">
-                        <img alt="Empty caption illustration" class="empty-caption-img" src="../svg/emptyCaption.svg" />
+                        <img alt="Empty caption illustration" class="empty-caption-img" src="../svg/emptyCaption.svg" >
                         <h5 class="empty-caption-title">Start Caption</h5>
                         <p class="empty-caption-desc">No captions yet. Click "Start" to begin live captions.</p>
                     </div>
@@ -438,9 +417,9 @@ access to use this app.
             </section>
         </section>
 
-        <!-- End of caption section -->
+        
 
-        <!-- Start my settings -->
+        
 
         <section id="mySettings" class="center fadein">
             <header id="mySettingsHeader">
@@ -503,16 +482,16 @@ access to use this app.
                             <button id="unlockRoomBtn" class="red">
                                 <i class="fas fa-lock red"></i>&nbsp;Unlock room
                             </button>
-                            <br />
+                            <br>
                         </div>
                         <div id="tabEmailInvitation">
                             <button id="roomSendEmailBtn">
                                 <i class="fas fa-envelope-circle-check"></i>&nbsp;Send email invitation
-                                <br />
+                                <br>
                             </button>
                         </div>
-                        <br />
-                        <br />
+                        <br>
+                        <br>
                         <table id="mySettingsTable">
                             <tr>
                                 <td class="w-80">
@@ -521,7 +500,7 @@ access to use this app.
                                         <p>Volume bar</p>
                                     </div>
                                 </td>
-                                <td><input id="switchAudioPitchBar" class="toggle" type="checkbox" checked /></td>
+                                <td><input id="switchAudioPitchBar" class="toggle" type="checkbox" checked ></td>
                             </tr>
                             <tr>
                                 <td class="w-80">
@@ -530,7 +509,7 @@ access to use this app.
                                         <p>Sounds</p>
                                     </div>
                                 </td>
-                                <td><input id="switchSounds" class="toggle" type="checkbox" checked /></td>
+                                <td><input id="switchSounds" class="toggle" type="checkbox" checked ></td>
                             </tr>
                             <tr id="shareOnJoinButton">
                                 <td class="w-80">
@@ -539,7 +518,7 @@ access to use this app.
                                         <p>Share</p>
                                     </div>
                                 </td>
-                                <td><input id="switchShare" class="toggle" type="checkbox" checked /></td>
+                                <td><input id="switchShare" class="toggle" type="checkbox" checked ></td>
                             </tr>
                             <tr id="keepButtonsVisibleButton">
                                 <td class="w-80">
@@ -548,7 +527,7 @@ access to use this app.
                                         <p>Buttons</p>
                                     </div>
                                 </td>
-                                <td><input id="switchKeepButtonsVisible" class="toggle" type="checkbox" /></td>
+                                <td><input id="switchKeepButtonsVisible" class="toggle" type="checkbox" ></td>
                             </tr>
                             <tr id="keepAwakeButton">
                                 <td class="w-80">
@@ -557,10 +536,10 @@ access to use this app.
                                         <p>Keep awake</p>
                                     </div>
                                 </td>
-                                <td><input id="switchKeepAwake" class="toggle" type="checkbox" /></td>
+                                <td><input id="switchKeepAwake" class="toggle" type="checkbox" ></td>
                             </tr>
                         </table>
-                        <br />
+                        <br>
                         <table id="mySettingsTable">
                             <tr>
                                 <td>
@@ -579,15 +558,15 @@ access to use this app.
                                 <i class="fas fa-video"></i>
                                 <p>Video Source</p>
                             </div>
-                            <br />
+                            <br>
                             <select id="videoSource"></select>
-                            <br />
+                            <br>
                         </div>
                         <div class="title">
                             <i class="fas fa-palette"></i>
                             <p>Video Quality</p>
                         </div>
-                        <br />
+                        <br>
                         <select id="videoQuality">
                             <option value="default">Default</option>
                             <option value="qvgaVideo">QVGA</option>
@@ -600,12 +579,12 @@ access to use this app.
                             <option value="8kVideo">8K</option>
                         </select>
                         <div id="videoFitDiv">
-                            <br />
+                            <br>
                             <div class="title">
                                 <i class="fa-solid fa-film"></i>
                                 <p>Video fit</p>
                             </div>
-                            <br />
+                            <br>
                             <select id="videoObjFitSelect">
                                 <option value="fill">Fill</option>
                                 <option value="contain">Contain</option>
@@ -615,12 +594,12 @@ access to use this app.
                             </select>
                         </div>
                         <div id="videoFpsDiv">
-                            <br />
+                            <br>
                             <div class="title">
                                 <i class="fa-solid fa-camera"></i>
                                 <p>Camera FPS</p>
                             </div>
-                            <br />
+                            <br>
                             <select id="videoFps">
                                 <option value="60">60 - frame-per-second</option>
                                 <option value="30">30 - frame-per-second</option>
@@ -629,12 +608,12 @@ access to use this app.
                             </select>
                         </div>
                         <div id="screenFpsDiv">
-                            <br />
+                            <br>
                             <div class="title">
                                 <i class="fa-solid fa-desktop"></i>
                                 <p>Screen FPS</p>
                             </div>
-                            <br />
+                            <br>
                             <select id="screenFps">
                                 <option value="60">60 - frame-per-second</option>
                                 <option value="30">30 - frame-per-second</option>
@@ -650,10 +629,10 @@ access to use this app.
                                 <i class="fas fa-microphone"></i>
                                 <p>Microphone</p>
                             </div>
-                            <br />
+                            <br>
                             <select id="audioSource"></select>
                         </div>
-                        <br />
+                        <br>
                         <div class="volume-container">
                             <div class="volume-bar"></div>
                             <div class="volume-bar"></div>
@@ -666,7 +645,7 @@ access to use this app.
                             <div class="volume-bar"></div>
                             <div class="volume-bar"></div>
                         </div>
-                        <br />
+                        <br>
                         <div id="micOptionsDiv">
                             <table id="mySettingsTable">
                                 <tr id="noiseSuppressionBtn">
@@ -676,23 +655,23 @@ access to use this app.
                                             <p id="labelNoiseSuppression">Noise Suppression</p>
                                         </div>
                                     </td>
-                                    <td><input id="switchNoiseSuppression" class="toggle" type="checkbox" /></td>
+                                    <td><input id="switchNoiseSuppression" class="toggle" type="checkbox" ></td>
                                 </tr>
                             </table>
-                            <br /><br />
+                            <br><br>
                         </div>
                         <div id="audioOutputDiv">
                             <div class="title">
                                 <i class="fas fa-headphones"></i>
                                 <p>Speaker</p>
                             </div>
-                            <br />
+                            <br>
                             <select id="audioOutput"></select>
                             <button id="speakerTestBtn" class="buttons">
                                 <i class="fa-solid fa-circle-play"></i>
                                 <p>Test speaker</p>
                             </button>
-                            <br /><br /><br /><br /><br />
+                            <br><br><br><br><br>
                         </div>
                         <table id="mySettingsTable">
                             <tr id="pushToTalkDiv">
@@ -702,16 +681,16 @@ access to use this app.
                                         <p>Push to talk</p>
                                     </div>
                                 </td>
-                                <td><input id="switchPushToTalk" class="toggle" type="checkbox" /></td>
+                                <td><input id="switchPushToTalk" class="toggle" type="checkbox" ></td>
                             </tr>
                         </table>
                     </div>
 
                     <div id="tabRecording" class="tabcontent">
-                        <img id="recImage" src="../images/recording.png" />
+                        <img id="recImage" src="../images/recording.png" >
                         <div class="trow">
                             <span class="clw notranslate" id="recordingTime"></span>
-                            <br />
+                            <br>
                             <button id="pauseRecBtn" class="buttons">
                                 <i class="far fa-pause-circle"></i>
                                 <p>Pause recording</p>
@@ -747,7 +726,7 @@ access to use this app.
                                         <p>Keyboard shortcuts</p>
                                     </div>
                                 </td>
-                                <td><input class="toggle" id="switchShortcuts" type="checkbox" /></td>
+                                <td><input class="toggle" id="switchShortcuts" type="checkbox" ></td>
                             </tr>
                         </table>
                         <div>
@@ -838,26 +817,26 @@ access to use this app.
                     <div id="tabProfile" class="tabcontent">
                         <div id="tabRoomPeerName">
                             <div>
-                                <img id="myProfileAvatar" />
+                                <img id="myProfileAvatar" >
                             </div>
-                            <br />
+                            <br>
                             <div class="title">
                                 <i class="fas fa-user"></i>
                                 <p>Name</p>
                             </div>
-                            <br /><br />
+                            <br><br>
                             <div>
-                                <input id="myPeerNameSet" type="text" placeholder="Change name..." maxlength="254" />
+                                <input id="myPeerNameSet" type="text" placeholder="Change name..." maxlength="254" >
                                 <button id="myPeerNameSetBtn"><i class="fas fa-user-edit"></i>&nbsp;Change name</button>
                             </div>
                         </div>
-                        <br />
+                        <br>
                         <div class="title">
                             <i class="fa-solid fa-user-shield"></i>
                             <p>Presenter:</p>
                             <p id="isPeerPresenter">true</p>
                         </div>
-                        <br /><br />
+                        <br><br>
                         <div class="title">
                             <i class="fa-solid fa-circle-info"></i>
                             <p>Extra info:</p>
@@ -907,7 +886,7 @@ access to use this app.
                             </tr>
                         </table>
 
-                        <hr class="hr" />
+                        <hr class="hr" >
 
                         <table id="mySettingsTable">
                             <tr>
@@ -963,7 +942,7 @@ access to use this app.
                             <i class="fa-solid fa-palette"></i>
                             <p>Theme</p>
                         </div>
-                        <br />
+                        <br>
                         <select id="mirotalkTheme">
                             <option value="dark">⚫️ Dark</option>
                             <option value="grey">⚪️ Grey</option>
@@ -974,14 +953,14 @@ access to use this app.
                             <option value="orange">🟠 Orange</option>
                             <option value="yellow">🟡 Yellow</option>
                         </select>
-                        <br />
+                        <br>
                         <div class="title">
                             <i class="fas fa-fill-drip"></i>
                             <p>Custom theme</p>
                         </div>
-                        <br />
-                        <input id="themeColorPicker" class="theme-color-picker" type="text" />
-                        <br />
+                        <br>
+                        <input id="themeColorPicker" class="theme-color-picker" type="text" >
+                        <br>
                         <div class="inline-check-box">
                             <div>
                                 <div class="title">
@@ -989,25 +968,25 @@ access to use this app.
                                     <p>Keep custom</p>
                                 </div>
                             </div>
-                            <input id="keepCustomTheme" class="toggle" type="checkbox" />
+                            <input id="keepCustomTheme" class="toggle" type="checkbox" >
                         </div>
-                        <br />
+                        <br>
                         <div class="title">
                             <i class="fa-solid fa-up-down-left-right"></i>
                             <p>Buttons bar</p>
                         </div>
-                        <br />
+                        <br>
                         <select id="mainButtonsBarPosition">
                             <option value="vertical">Vertical</option>
                             <option value="horizontal">Horizontal</option>
                         </select>
-                        <br />
+                        <br>
                         <div id="pinUnpinGridDiv">
                             <div class="title">
                                 <i class="fa-solid fa-map-pin"></i>
                                 <p>Pin video position</p>
                             </div>
-                            <br />
+                            <br>
                             <select id="pinVideoPositionSelect">
                                 <option value="vertical">Vertical</option>
                                 <option value="horizontal">Horizontal</option>
@@ -1021,18 +1000,18 @@ access to use this app.
                             <i class="fa-solid fa-language"></i>
                             <p>Language</p>
                         </div>
-                        <br />
+                        <br>
                         <div id="google_translate_element"></div>
-                        <br />
+                        <br>
                     </div>
-                    <br />
+                    <br>
                 </div>
             </main>
         </section>
 
-        <!-- End my settings -->
+        
 
-        <!-- Start whiteboard -->
+        
 
         <section id="whiteboard" class="hidden">
             <header id="whiteboardHeader" class="whiteboard-header">
@@ -1043,8 +1022,8 @@ access to use this app.
                 <div id="whiteboardOptions" class="whiteboard-header-options">
                     <button id="whiteboardGhostButton" class="fas fa-circle-half-stroke"></button>
                     <button id="whiteboardGridBtn" class="fas fa-table-cells-large hidden"></button>
-                    <input id="wbBackgroundColorEl" class="whiteboardColorPicker" type="color" value="#000000" />
-                    <input id="wbDrawingColorEl" class="whiteboardColorPicker" type="color" value="#FFFFFF" />
+                    <input id="wbBackgroundColorEl" class="whiteboardColorPicker" type="color" value="#000000" >
+                    <input id="wbDrawingColorEl" class="whiteboardColorPicker" type="color" value="#FFFFFF" >
                     <button id="whiteboardPencilBtn" class="fas fa-pencil-alt"></button>
                     <button id="whiteboardVanishingBtn" class="fas fa-highlighter"></button>
                     <button id="whiteboardObjectBtn" class="fas fa-mouse-pointer"></button>
@@ -1052,8 +1031,7 @@ access to use this app.
                     <button id="whiteboardUndoBtn" class="fas fa-undo"></button>
                     <button id="whiteboardRedoBtn" class="fas fa-redo"></button>
                     <div class="whiteboard-dropdown">
-                        <button
-                            class="whiteboard-dropdown-toggle"
+                        <button                             class="whiteboard-dropdown-toggle"
                             type="button"
                             id="whiteboardDropDownMenuBtn"
                             data-bs-toggle="whiteboard-dropdown"
@@ -1061,8 +1039,7 @@ access to use this app.
                         >
                             <i class="fas fa-ellipsis-v"></i>
                         </button>
-                        <div
-                            id="whiteboardDropdownMenu"
+                        <div                             id="whiteboardDropdownMenu"
                             class="whiteboard-dropdown-menu"
                             aria-labelledby="whiteboardDropDownMenu"
                         >
@@ -1076,14 +1053,13 @@ access to use this app.
                             <button id="whiteboardLineBtn"><i class="fas fa-slash"></i> Add line</button>
                             <button id="whiteboardRectBtn"><i class="far fa-square"></i> Add rectangle</button>
                             <button id="whiteboardTriangleBtn">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
+                                <svg                                     xmlns="http://www.w3.org/2000/svg"
                                     width="1em"
                                     height="1em"
                                     viewBox="0 0 24 24"
                                     fill="#FFFFFF"
                                 >
-                                    <path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" />
+                                    <path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" ></path>
                                 </svg>
                                 Add triangle
                             </button>
@@ -1143,24 +1119,24 @@ access to use this app.
             </main>
         </section>
 
-        <!-- End whiteboard -->
+        
 
-        <!-- Start File Send -->
+        
 
         <div id="sendFileDiv" class="center fadein">
-            <img id="imgShareSend" src="../images/share.png" alt="mirotalk-share-send" class="center-img" /><br />
+            <img id="imgShareSend" src="../images/share.png" alt="mirotalk-share-send" class="center-img" ><br>
             <div id="sendFileInfo"></div>
             <div id="sendFilePercentage"></div>
             <progress id="sendProgress" max="0" value="0"></progress>
             <button id="sendAbortBtn"><i class="fas fa-stop-circle"></i>&nbsp; Abort</button>
         </div>
 
-        <!-- End File Send -->
+        
 
-        <!-- Start File Receive -->
+        
 
         <div id="receiveFileDiv" class="center fadein">
-            <img id="imgShareReceive" src="../images/share.png" alt="mirotalk-share-receive" class="center-img" /><br />
+            <img id="imgShareReceive" src="../images/share.png" alt="mirotalk-share-receive" class="center-img" ><br>
             <div id="receiveFileInfo"></div>
             <div id="receiveFilePercentage"></div>
             <progress id="receiveProgress" max="0" value="0"></progress>
@@ -1168,17 +1144,16 @@ access to use this app.
             <button id="receiveHideBtn"><i class="fas fa-eye-slash"></i>&nbsp; Hide</button>
         </div>
 
-        <!-- Stop File Receive -->
+        
 
-        <!-- Start video URL iframe -->
+        
 
         <div id="videoUrlCont" class="center fadein">
             <div id="videoUrlHeader">
                 <button id="videoUrlCloseBtn" class="fas fa-times"></button>
             </div>
-            <br />
-            <iframe
-                id="videoUrlIframe"
+            <br>
+            <iframe                 id="videoUrlIframe"
                 title="Video Url Player"
                 src=""
                 frameborder="0"
@@ -1187,73 +1162,51 @@ access to use this app.
             ></iframe>
         </div>
 
-        <!-- End Youtube Iframe -->
+        
 
-        <!-- Start Video - Audio player -->
+        
 
         <div id="videoAudioUrlCont" class="center fadein">
             <div id="videoAudioUrlHeader">
                 <button id="videoAudioCloseBtn" class="fas fa-times"></button>
             </div>
-            <br />
+            <br>
             <video id="videoAudioUrlElement" src="" autoplay playsinline controls></video>
         </div>
 
-        <!-- End Video - Audio player -->
+        
 
-        <!-- Start Video container -->
+        
 
         <div id="videoPinMediaContainer"></div>
         <div id="videoMediaContainer">
-            <!-- <div class="Camera">
-                <video></video>
-            </div> -->
+            
         </div>
 
         <div id="audioMediaContainer">
-            <!-- <div>
-                <audio></audio>
-            </div>-->
+            
         </div>
 
-        <!-- End Video container -->
-
-        <!--
-        - JS scripts https://cdn.jsdelivr.net
         
-        - https://webrtc.github.io/adapter/adapter-latest.js                (https://github.com/webrtcHacks/adapter)
-        - https://github.com/leizongmin/js-xss                              (https://www.npmjs.com/package/xss)
-        - https://www.npmjs.com/package/marked                              (https://github.com/markedjs/marked)
-        - https://www.npmjs.com/package/sweetalert2                         (https://github.com/sweetalert2/sweetalert2)
-        - https://www.npmjs.com/package/fabric                              (https://github.com/fabricjs/fabric.js)
-        - https://www.npmjs.com/package/qrious                              (https://github.com/neocotic/qrious)
-        - https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js    (https://github.com/missive/emoji-mart)
-        - https://mozilla.github.io/pdf.js/                                 (https://github.com/mozilla/pdf.js)
-        - https://www.jsdelivr.com/package/npm/crypto-js                    (https://github.com/brix/crypto-js/)
-        - https://www.npmjs.com/package/tippy.js                            (https://github.com/atomiks/tippyjs) 
-        - https://flatpickr.js.org/                                         (https://github.com/flatpickr/flatpickr)
-        - https://simonwep.github.io/pickr/                                 (https://github.com/simonwep/pickr)
-        - https://uaparser.dev/                                             (https://github.com/faisalman/ua-parser-js)
-        - https://www.npmjs.com/package/axios                               (https://github.com/axios/axios)
-        - https://highlightjs.org/                                          (https://github.com/highlightjs/highlight.js)
-        -->
-        <script defer src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/xss/dist/xss.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/fabric@5.3.0-browser/dist/fabric.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/ua-parser-js@latest/dist/ua-parser.min.js"></script>
-        <script async src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+
+        
+        <script defer src="/vendor/adapter/adapter-latest.js"></script>
+        <script defer src="/vendor/npm/xss/dist/xss.min.js"></script>
+        <script defer src="/vendor/npm/marked/marked.min.js"></script>
+        <script defer src="/vendor/npm/sweetalert2@11.4.8/index.js"></script>
+        <script defer src="/vendor/npm/fabric@5.3.0-browser/dist/fabric.min.js"></script>
+        <script defer src="/vendor/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+        <script defer src="/vendor/npm/emoji-mart@latest/dist/browser.js"></script>
+        <script defer src="/vendor/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+        <script defer src="/vendor/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+        <script defer src="/vendor/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+        <script defer src="/vendor/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js"></script>
+        <script defer src="/vendor/npm/flatpickr/index.js"></script>
+        <script defer src="/vendor/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+        <script defer src="/vendor/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+        <script defer src="/vendor/npm/ua-parser-js@latest/dist/ua-parser.min.js"></script>
+        <script async src="/vendor/npm/axios/dist/axios.min.js"></script>
+        <script defer src="/vendor/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
         <script defer src="/socket.io/socket.io.js"></script>
         <script defer src="../js/localStorage.js"></script>
         <script defer src="../js/helpers.js"></script>
@@ -1272,11 +1225,8 @@ access to use this app.
         <script defer src="../js/speechRecognition.js"></script>
         <script defer src="../js/nodeProcessor.js"></script>
 
-        <!-- end of Js scripts -->
+        
 
-        <!-- 
-		the <video> and <audio> tags are all added and removed dynamically
-		in 'onAddStream', 'setupLocalMedia', and 'removePeer'/'disconnect'
-		-->
+        
     </body>
 </html>

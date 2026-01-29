@@ -6,6 +6,7 @@
     "scripts": {
         "start": "node app/src/server.js",
         "start-dev": "nodemon app/src/server.js",
+        "build-vendor": "node app/src/cdn-to-local.js",
         "test": "mocha tests/*.js",
         "lint": "npx prettier --write .",
         "docker-build": "docker build --tag mirotalk/p2p:latest .",
@@ -61,6 +62,7 @@
         "js-yaml": "^4.1.1",
         "jsdom": "^27.4.0",
         "jsonwebtoken": "^9.0.3",
+        "node-html-parser": "^7.0.2",
         "nodemailer": "^7.0.13",
         "openai": "^6.16.0",
         "qs": "^6.14.1",

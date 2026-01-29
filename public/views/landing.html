@@ -1,67 +1,65 @@
 <!doctype html>
 <html lang="en" class="no-js">
     <head>
-        <!-- Title and Icon -->
+        
 
         <title id="landingTitle">MiroTalk a Free Secure Video Calls, Chat & Screen Sharing.</title>
-        <link id="shortcutIcon" rel="shortcut icon" href="../images/logo.svg" />
-        <link id="appleTouchIcon" rel="apple-touch-icon" href="../images/logo.svg" />
+        <link id="shortcutIcon" rel="shortcut icon" href="../images/logo.svg" >
+        <link id="appleTouchIcon" rel="apple-touch-icon" href="../images/logo.svg" >
 
-        <!-- Meta Information -->
+        
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
-        <meta
-            name="description"
+        <meta             name="description"
             content="MiroTalk powered by WebRTC, Real-time Simple Secure Fast video calls, chat and screen sharing capabilities in the browser, from your mobile or desktop."
-        />
-        <meta
-            name="keywords"
+        >
+        <meta             name="keywords"
             content="webrtc, self hosted, voip, sip, real-time communications, chat, messaging, meet, webrtc stun, webrtc turn, video meeting, video chat, video conference, multi video chat, multi video conference, peer to peer, p2p, rtc, alternative to, zoom, microsoft teams, google meet, jitsi, meeting"
-        />
+        >
 
-        <!-- https://ogp.me -->
+        
 
-        <meta property="og:type" content="{{OG_TYPE}}" />
-        <meta property="og:site_name" content="{{OG_SITE_NAME}}" />
-        <meta property="og:title" content="{{OG_TITLE}}" />
-        <meta property="og:description" content="{{OG_DESCRIPTION}}" />
-        <meta property="og:image" content="{{OG_IMAGE}}" />
-        <meta property="og:url" content="{{OG_URL}}" />
+        <meta property="og:type" content="{{OG_TYPE}}" >
+        <meta property="og:site_name" content="{{OG_SITE_NAME}}" >
+        <meta property="og:title" content="{{OG_TITLE}}" >
+        <meta property="og:description" content="{{OG_DESCRIPTION}}" >
+        <meta property="og:image" content="{{OG_IMAGE}}" >
+        <meta property="og:url" content="{{OG_URL}}" >
 
-        <!-- xss -->
+        
 
-        <script src="https://cdn.jsdelivr.net/npm/xss/dist/xss.min.js"></script>
+        <script src="/vendor/npm/xss/dist/xss.min.js"></script>
 
-        <!-- https://cdnjs.com/libraries/font-awesome -->
+        
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="stylesheet" href="/vendor/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-        <!-- StyleSheet -->
+        
 
-        <link rel="stylesheet" href="../css/landing.css" />
-        <link rel="stylesheet" href="../css/newcall.css" />
+        <link rel="stylesheet" href="../css/landing.css" >
+        <link rel="stylesheet" href="../css/newcall.css" >
 
-        <!-- https://animate.style 4 using for swal fadeIn-Out -->
+        
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="/vendor/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-        <!-- Snow effects -->
+        
 
-        <link rel="stylesheet" href="../css/snow.css" />
+        <link rel="stylesheet" href="../css/snow.css" >
         <script defer src="../js/snow.js"></script>
 
-        <!-- JavaScripts -->
+        
 
         <script async src="../js/stats.js"></script>
 
-        <!-- sweetalert -->
+        
 
-        <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8"></script>
+        <script defer src="/vendor/npm/sweetalert2@11.4.8/index.js"></script>
 
-        <!-- MiroTalk P2P Widget -->
+        
 
         <script defer src="../js/widget.js"></script>
     </head>
@@ -74,14 +72,8 @@
                         <div class="brand">
                             <div class="m-0">
                                 <a href="/">
-                                    <img src="../images/logo.svg" alt="MiroTalk P2P" width="32" height="32" />
-                                    <!-- <img
-                                        src="../images/mirotalk-mc.png"
-                                        alt="MiroTalk P2P"
-                                        width="96"
-                                        height="auto"
-                                        style="margin-top: 80px"
-                                    /> -->
+                                    <img src="../images/logo.svg" alt="MiroTalk P2P" width="32" height="32" >
+                                    
                                 </a>
                             </div>
                         </div>
@@ -95,16 +87,14 @@
                             <div class="split-wrap invert-mobile">
                                 <div class="split-item">
                                     <div class="hero-content split-item-content center-content-mobile">
-                                        <h1
-                                            id="appTitle"
+                                        <h1                                             id="appTitle"
                                             class="mt-32 mb-16 reveal-from-bottom"
                                             data-reveal-delay="150"
                                         >
-                                            MiroTalk<br />Free browser based Real-time video calls.<br />
+                                            MiroTalk<br>Free browser based Real-time video calls.<br>
                                             Simple, Secure, Fast.
                                         </h1>
-                                        <p
-                                            id="appDescription"
+                                        <p                                             id="appDescription"
                                             class="mt-0 mb-32 reveal-from-bottom"
                                             data-reveal-delay="300"
                                         >
@@ -131,7 +121,7 @@
                         <div class="cta-inner section-inner cta-split br-12">
                             <div class="cta-slogan">
                                 <h3 id="appJoinDescription" class="m-0">
-                                    Pick a room name.<br />
+                                    Pick a room name.<br>
                                     How about this one?
                                 </h3>
                             </div>
@@ -139,15 +129,13 @@
                                 <div class="mb-0">
                                     <label class="form-label screen-reader" for="roomName">MiroTalk-P2P</label>
                                     <div class="form-group-desktop">
-                                        <input
-                                            id="roomName"
+                                        <input                                             id="roomName"
                                             class="form-input"
                                             type="text"
                                             value="mirotalk"
                                             maxlength="32"
-                                        />
-                                        <button
-                                            id="genRoomButton"
+                                        >
+                                        <button                                             id="genRoomButton"
                                             class="button button-primary br-6 mr-8 mb-8 fas fa-arrows-rotate"
                                         ></button>
                                         <button id="joinRoomButton" class="button button-primary br-6">
@@ -171,26 +159,22 @@
                             <ul class="list-reset">
                                 <li class="reveal-from-left" data-reveal-delay="150">
                                     <div class="clients-logo">
-                                        <a
-                                            href="https://recall.ai/?utm_source=mirotalkp2p&utm_medium=sponsorship"
+                                        <a                                             href="https://recall.ai/?utm_source=mirotalkp2p&utm_medium=sponsorship"
                                             target="_blank"
                                             data-umami-event="RecallButton"
                                         >
-                                            <img
-                                                class="clients-size-logo"
+                                            <img                                                 class="clients-size-logo"
                                                 src="../sponsors/RecallAI.svg"
                                                 alt="Recall.ai"
-                                            />
+                                            >
                                         </a>
                                     </div>
                                     <div class="mt-16 tac">
-                                        <a
-                                            href="https://recall.ai/?utm_source=mirotalkp2p&utm_medium=sponsorship"
+                                        <a                                             href="https://recall.ai/?utm_source=mirotalkp2p&utm_medium=sponsorship"
                                             target="_blank"
                                             class="blue"
                                             data-umami-event="RecallLink"
-                                            >Recall.ai</a
-                                        >
+                                            >Recall.ai</a>
                                         – an API for recording Zoom, Google Meet, Microsoft Teams, and in-person
                                         meetings.
                                     </div>
@@ -221,11 +205,10 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    class="wh-200-150"
+                                                <img                                                     class="wh-200-150"
                                                     src="../svg/screenSharing.svg"
                                                     alt="Screen Sharing"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -242,11 +225,10 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    class="wh-200-150"
+                                                <img                                                     class="wh-200-150"
                                                     src="../svg/webcamStreaming.svg"
                                                     alt="WebCam Streaming"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -263,7 +245,7 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img class="wh-200-150" src="../svg/webcamChat.svg" alt="Chat Room" />
+                                                <img class="wh-200-150" src="../svg/webcamChat.svg" alt="Chat Room" >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -280,11 +262,10 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    class="wh-200-150"
+                                                <img                                                     class="wh-200-150"
                                                     src="../svg/recordingMeeting.svg"
                                                     alt="Meeting Recording"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -301,11 +282,10 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    class="wh-200-150"
+                                                <img                                                     class="wh-200-150"
                                                     src="../svg/interactiveWhitboard.svg"
                                                     alt="Interactive Whiteboard"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -322,11 +302,10 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    class="wh-200-150"
+                                                <img                                                     class="wh-200-150"
                                                     src="../svg/fileSharing.svg"
                                                     alt="File Sharing"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -343,7 +322,7 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img class="wh-200-150" src="../svg/chatgpt.svg" alt="ChatGPT" />
+                                                <img class="wh-200-150" src="../svg/chatgpt.svg" alt="ChatGPT" >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -360,7 +339,7 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img class="wh-200-150" src="../svg/api.svg" alt="Rest API" />
+                                                <img class="wh-200-150" src="../svg/api.svg" alt="Rest API" >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -377,11 +356,10 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    class="wh-200-150"
+                                                <img                                                     class="wh-200-150"
                                                     src="../svg/totalPrivacy.svg"
                                                     alt="Total Privacy"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -398,11 +376,10 @@
                                     <div class="tiles-item-inner">
                                         <div class="features-tiles-item-header">
                                             <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    class="wh-200-150"
+                                                <img                                                     class="wh-200-150"
                                                     src="../svg/maximumSecurity.svg"
                                                     alt="Maximum Security"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="features-tiles-item-content">
@@ -432,12 +409,11 @@
                                     <div class="tiles-item-inner">
                                         <div class="team-item-header">
                                             <div class="team-item-image mb-24">
-                                                <img
-                                                    src="../images/browsers.png"
+                                                <img                                                     src="../images/browsers.png"
                                                     alt="Supported Browsers"
                                                     width="auto"
                                                     height="auto"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="team-item-content">
@@ -462,23 +438,21 @@
                             </div>
 
                             <div class="tiles-wrap">
-                                <!-- Author -->
+                                
                                 <div class="tiles-item reveal-from-bottom">
                                     <div class="tiles-item-inner">
                                         <div class="team-item-header">
                                             <div class="team-item-image mb-24">
-                                                <img
-                                                    src="../images/miroslav-pejic.png"
+                                                <img                                                     src="../images/miroslav-pejic.png"
                                                     alt="Team member author"
                                                     width="180"
                                                     height="180"
                                                     class="rounded-image"
-                                                />
+                                                >
                                             </div>
                                         </div>
                                         <div class="team-item-content">
-                                            <a
-                                                target="_blank"
+                                            <a                                                 target="_blank"
                                                 href="https://www.linkedin.com/in/miroslav-pejic-976a07101/"
                                             >
                                                 <h5 class="team-item-name mt-0 mb-4">Miroslav Pejic</h5>
@@ -503,8 +477,7 @@
                                 </div>
                                 <div class="center-content">
                                     <a class="button button-custom button-wide-mobile br-6 pulse" href="/newcall"
-                                        >Try now</a
-                                    >
+                                        >Try now</a>
                                 </div>
                             </div>
                         </div>
@@ -519,31 +492,28 @@
                                 <li class="reveal-from-top" data-reveal-delay="150">
                                     <div class="clients-logo">
                                         <a href="https://hetzner.cloud/?ref=XdRifCzCK3bn" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/Hetzner.png"
                                                 alt="Powered by Hetzner"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="200">
                                     <div class="clients-logo">
                                         <a href="https://www.netcup.com/en/?ref=309627" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/Netcup.png"
                                                 alt="Powered by Netcup"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="250">
                                     <div class="clients-logo">
                                         <a href="https://www.dpbolvw.net/click-101027391-14462707" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../advertisers/ContaboLogo.png"
                                                 alt="Powered by Contabo"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                             </ul>
@@ -559,102 +529,94 @@
                                 <li class="reveal-from-top" data-reveal-delay="150">
                                     <div class="clients-logo">
                                         <a href="https://effectssdk.ai" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/EffectsSDK-logo.png"
                                                 alt="EffectsSDK"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="200">
                                     <div class="clients-logo">
                                         <a href="https://hetzner.cloud/?ref=XdRifCzCK3bn" target="_blank"
                                             ><img class="clients-size-logo" src="../sponsors/Hetzner.png" alt="Hetzner"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="250">
                                     <div class="clients-logo">
                                         <a href="https://www.netcup.com/en/?ref=309627" target="_blank"
                                             ><img class="clients-size-logo" src="../sponsors/Netcup.png" alt="Netcup"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="300">
                                     <div class="clients-logo">
                                         <a href="https://cloudron.io" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/Cloudron.png"
                                                 alt="Cloudron"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="350">
                                     <div class="clients-logo">
                                         <a href="https://www.questionpro.com" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/QuestionPro.png"
                                                 alt="QuestionPro"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="400">
                                     <div class="clients-logo">
                                         <a href="https://www.testmu.ai/" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/TestMuAIWhite.svg"
                                                 alt="TestMuAI"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="450">
                                     <div class="clients-logo">
                                         <a href="https://www.browserstack.com" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/BrowserStack.png"
                                                 alt="BrowserStack"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="500">
                                     <div class="clients-logo">
                                         <a href="https://crystalsound.ai" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/CrystalSound.png"
                                                 alt="CrystalSound"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="550">
                                     <div class="clients-logo">
                                         <a href="https://kiquix.com" target="_blank"
                                             ><img class="clients-size-logo" src="../sponsors/Kiquix.png" alt="Kiquix"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="600">
                                     <div class="clients-logo">
                                         <a href="https://broadcastx.de/" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/BroadcastX.png"
                                                 alt="BroadcastX"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="650">
                                     <div class="clients-logo">
                                         <a id="adultCnt" class="cp"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../sponsors/LuvLounge.png"
                                                 alt="LuvLounge"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                             </ul>
@@ -670,31 +632,28 @@
                                 <li class="reveal-from-top" data-reveal-delay="150">
                                     <div class="clients-logo">
                                         <a href="https://www.dpbolvw.net/click-101027391-14462707" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../advertisers/Contabo.png"
                                                 alt="Contabo"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="200">
                                     <div class="clients-logo">
                                         <a href="https://hostinger.com/?REFERRALCODE=MIROTALK" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../advertisers/Hostinger.png"
                                                 alt="Hostinger"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                                 <li class="reveal-from-top" data-reveal-delay="250">
                                     <div class="clients-logo">
                                         <a href="https://rambox.app?via=mirotalk" target="_blank"
-                                            ><img
-                                                class="clients-size-logo"
+                                            ><img                                                 class="clients-size-logo"
                                                 src="../advertisers/Rambox.png"
                                                 alt="Rambox"
-                                        /></a>
+                                        ></a>
                                     </div>
                                 </li>
                             </ul>
@@ -716,11 +675,10 @@
                                     contribution matters!
                                 </p>
 
-                                <!-- Support Options -->
+                                
                                 <div class="support-options mt-24">
-                                    <!-- CodeCanyon -->
-                                    <a
-                                        href="https://codecanyon.net/user/miroslavpejic85"
+                                    
+                                    <a                                         href="https://codecanyon.net/user/miroslavpejic85"
                                         target="_blank"
                                         class="support-card reveal-from-bottom"
                                         data-reveal-delay="150"
@@ -728,18 +686,16 @@
                                     >
                                         <div class="support-card-icon">
                                             <svg height="28" width="28" viewBox="0 0 24 24" fill="#82B541">
-                                                <path
-                                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.5 16.5h-11v-9h11v9z"
-                                                />
+                                                <path                                                     d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.5 16.5h-11v-9h11v9z"
+                                                ></path>
                                             </svg>
                                         </div>
                                         <h5 class="support-card-title-small">CodeCanyon</h5>
                                         <p class="support-card-description-small">Buy commercial license</p>
                                     </a>
 
-                                    <!-- PayPal -->
-                                    <a
-                                        href="https://www.paypal.com/donate/?hosted_button_id=TW833WU7EUPHJ"
+                                    
+                                    <a                                         href="https://www.paypal.com/donate/?hosted_button_id=TW833WU7EUPHJ"
                                         target="_blank"
                                         class="support-card reveal-from-bottom"
                                         data-reveal-delay="200"
@@ -747,18 +703,16 @@
                                     >
                                         <div class="support-card-icon">
                                             <svg height="28" width="28" viewBox="0 0 24 24" fill="#0070BA">
-                                                <path
-                                                    d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.76-4.852a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.746-4.46z"
-                                                />
+                                                <path                                                     d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.76-4.852a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.746-4.46z"
+                                                ></path>
                                             </svg>
                                         </div>
                                         <h5 class="support-card-title-small">PayPal</h5>
                                         <p class="support-card-description-small">One-time donation</p>
                                     </a>
 
-                                    <!-- Stripe -->
-                                    <a
-                                        href="https://buy.stripe.com/9B614m93Lg4L4Ag3Eabsc02"
+                                    
+                                    <a                                         href="https://buy.stripe.com/9B614m93Lg4L4Ag3Eabsc02"
                                         target="_blank"
                                         class="support-card reveal-from-bottom"
                                         data-reveal-delay="250"
@@ -766,18 +720,16 @@
                                     >
                                         <div class="support-card-icon">
                                             <svg height="28" width="28" viewBox="0 0 24 24" fill="#635BFF">
-                                                <path
-                                                    d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"
-                                                />
+                                                <path                                                     d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"
+                                                ></path>
                                             </svg>
                                         </div>
                                         <h5 class="support-card-title-small">Stripe</h5>
                                         <p class="support-card-description-small">Donate via credit card</p>
                                     </a>
 
-                                    <!-- GitHub Sponsors -->
-                                    <a
-                                        href="https://github.com/sponsors/miroslavpejic85"
+                                    
+                                    <a                                         href="https://github.com/sponsors/miroslavpejic85"
                                         target="_blank"
                                         class="support-card reveal-from-bottom"
                                         data-reveal-delay="300"
@@ -785,9 +737,8 @@
                                     >
                                         <div class="support-card-icon">
                                             <svg height="28" width="28" viewBox="0 0 16 16" fill="#ffffff">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                                                />
+                                                <path                                                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                                                ></path>
                                             </svg>
                                         </div>
                                         <h5 class="support-card-title-small">GitHub Sponsors</h5>
@@ -808,8 +759,7 @@
                                     </p>
                                     <p class="text-sm mt-8 mb-0">
                                         <strong>Join our community:</strong>
-                                        <a
-                                            href="https://discord.gg/rgGYfeYW3N"
+                                        <a                                             href="https://discord.gg/rgGYfeYW3N"
                                             target="_blank"
                                             class="blue ml-4"
                                             data-umami-event="DiscordCommunity"
@@ -830,94 +780,82 @@
                     <div class="site-footer-inner">
                         <div class="footer-top space-between text-xxs">
                             <div class="brand">
-                                <a href="/"><img src="../images/logo.svg" alt="Neon" width="32" height="32" /></a>
+                                <a href="/"><img src="../images/logo.svg" alt="Neon" width="32" height="32" ></a>
                             </div>
                             <div class="footer-social">
                                 <ul class="list-reset">
                                     <li class="footer-social-icon">
                                         <a target="_blank" href="https://discord.gg/rgGYfeYW3N">
-                                            <svg
-                                                width="16"
+                                            <svg                                                 width="16"
                                                 height="16"
                                                 viewBox="0 0 16 16"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <title>Forum</title>
-                                                <path
-                                                    d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
-                                                />
+                                                <path                                                     d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
+                                                ></path>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="footer-social-icon">
                                         <a target="_blank" href="https://www.facebook.com/mirotalk">
-                                            <svg
-                                                width="16"
+                                            <svg                                                 width="16"
                                                 height="16"
                                                 viewBox="0 0 16 16"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <title>Facebook</title>
-                                                <path
-                                                    d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
-                                                />
+                                                <path                                                     d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                                                ></path>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="footer-social-icon">
                                         <a target="_blank" href="https://www.youtube.com/watch?v=_IVn2aINYww">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
+                                            <svg                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="18"
                                                 height="18"
                                                 viewBox="0 0 24 24"
                                             >
                                                 <title>YouTube</title>
-                                                <path
-                                                    d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"
+                                                <path                                                     d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"
                                                     fill="#0270D7"
-                                                />
+                                                ></path>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="footer-social-icon">
                                         <a target="_blank" href="mailto:miroslav.pejic.85@gmail.com">
-                                            <svg
-                                                width="16"
+                                            <svg                                                 width="16"
                                                 height="16"
                                                 viewBox="0 0 16 16"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <title>Email</title>
-                                                <path
-                                                    d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
+                                                <path                                                     d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
                                                     fill="#0270D7"
-                                                />
+                                                ></path>
                                             </svg>
                                         </a>
                                     </li>
                                     <li>
-                                        <!-- https://buttons.github.io/ -->
-                                        <a
-                                            class="github-button"
+                                        
+                                        <a                                             class="github-button"
                                             href="https://github.com/sponsors/miroslavpejic85"
                                             data-color-scheme="no-preference: light; light: light; dark: dark;"
                                             data-icon="octicon-heart"
                                             data-size="large"
                                             aria-label="Sponsor @miroslavpejic85 on GitHub"
-                                            >Sponsor</a
-                                        >
+                                            >Sponsor</a>
                                     </li>
                                     <li>
-                                        <a
-                                            class="github-button"
+                                        <a                                             class="github-button"
                                             href="https://github.com/miroslavpejic85/mirotalk"
                                             data-color-scheme="no-preference: light; light: light; dark: dark;"
                                             data-size="large"
                                             data-show-count="true"
                                             aria-label="Star miroslavpejic85/mirotalk on GitHub"
-                                            >Star</a
-                                        >
+                                            >Star</a>
                                     </li>
                                 </ul>
                             </div>
@@ -936,8 +874,7 @@
                                     </li>
                                     <li>
                                         <a target="_blank" href="https://www.linkedin.com/in/miroslav-pejic-976a07101/"
-                                            >Contact: Miroslav Pejic</a
-                                        >
+                                            >Contact: Miroslav Pejic</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -951,6 +888,5 @@
         <script defer src="../js/common.js"></script>
         <script defer src="../js/brand.js"></script>
         <script defer src="../js/landing.js"></script>
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
     </body>
 </html>

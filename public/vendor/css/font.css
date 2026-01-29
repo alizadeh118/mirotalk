@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(./IBM-Plex-Sans-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(./IBM-Plex-Sans-600.ttf) format('truetype');
+}
